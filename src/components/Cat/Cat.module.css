@@ -1,0 +1,9 @@
+.container {
+  @apply relative;
+}
+.img {
+  @apply aspect-square transition inline-block;
+}
+.button {
+  @apply absolute bottom-1 right-2 hidden;
+}
