@@ -16,8 +16,8 @@ const Home = () => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: "80px",
-      threshold: 0.5,
+      rootMargin: "0px",
+      threshold: 0.1,
     };
     const observer = new IntersectionObserver(handleObserver, options);
     if (catLoader.current) {
