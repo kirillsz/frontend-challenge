@@ -27,12 +27,7 @@ const Home = () => {
 
   return (
     <>
-      {data.length !== 0 && (
-        <div>
-          <CatList cats={data} />
-          <div ref={catLoader}>Еще котиков?</div>
-        </div>
-      )}
+      {data.length !== 0 && <CatList cats={data} />}
       {loading && (
         <h3>
           Котики загружаются <span className="animate-ping">...</span>
@@ -44,6 +39,7 @@ const Home = () => {
           <span className="text-red-500 font-semibold">{error}</span>
         </h3>
       )}
+      <div ref={catLoader}>Еще котиков?</div>
     </>
   );
 };
